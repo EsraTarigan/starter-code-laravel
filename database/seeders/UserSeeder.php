@@ -19,6 +19,7 @@ class UserSeeder extends Seeder
         User::factory(10)->create();
 
         //apabila kita menggunakan statik kitabisa tambahakan user dengan manual di page ini misal
+        //membuat user seeder
         User::create([
             'name' => 'SuperAdmin',
             'email' => 'super@gmail.com',
