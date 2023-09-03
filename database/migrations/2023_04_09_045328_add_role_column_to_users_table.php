@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            //tambahkan 1 komol role setelah kolom email
+            //tambahkan 1 kolom role setelah kolom email
             $table->enum('role', ['superadmin', 'admin', 'user'])->after('email')->default('user');
         });
     }
